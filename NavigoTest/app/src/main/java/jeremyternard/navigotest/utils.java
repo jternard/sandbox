@@ -6,5 +6,5 @@ package jeremyternard.navigotest;
 public class utils {
     public String firstFunction(){
         return "Hello World";
-    }
+    };
 }

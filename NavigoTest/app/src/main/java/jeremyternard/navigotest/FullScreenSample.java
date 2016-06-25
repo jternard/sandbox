@@ -1,12 +1,17 @@
 package jeremyternard.navigotest;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
+import android.view.TextureView;
 import android.view.View;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -14,12 +19,16 @@ import android.view.View;
  */
 public class FullScreenSample extends AppCompatActivity {
 
+    public String firstFunction(){
+        return "Hello World";}
+
 
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
     private static final boolean AUTO_HIDE = true;
+
 
     /**
      * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
@@ -34,6 +43,7 @@ public class FullScreenSample extends AppCompatActivity {
     private static final int UI_ANIMATION_DELAY = 300;
     private final Handler mHideHandler = new Handler();
     private View mContentView;
+    private View bContentView;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -89,7 +99,7 @@ public class FullScreenSample extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_full_screen_sample);
+
 
 
         mVisible = true;
@@ -102,15 +112,24 @@ public class FullScreenSample extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 toggle();
-                setContentView(view.findViewById(R.id.fullscreen_content),getText()));
-
             }
         });
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        bContentView = findViewById(R.id.dummy_button);
+        bContentView.setOnTouchListener(mDelayHideTouchListener);
+        bContentView.setOnClickListener(new View.onClickListener) {
+            public void onClick(View view) {
+                toggle();
+            }
+        });
+
+        setContentView(R.layout.activity_full_screen_sample);
+        Intent intent = getIntent();
+        TextView TV = (TextView)view;
+        TV.setText(firstFunction());
     }
 
     @Override
@@ -126,9 +145,12 @@ public class FullScreenSample extends AppCompatActivity {
     private void toggle() {
         if (mVisible) {
             hide();
+
         } else {
             show();
+
         }
+
     }
 
     private void hide() {
