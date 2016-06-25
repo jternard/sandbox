@@ -33,6 +33,8 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -45,7 +47,7 @@ public class MainPage extends AppCompatActivity implements OnClickListener {
 
     private EditText mInputNameView;
     private EditText mInputDNAView;
-    private EditText mOutputNameView;
+    private TextView mOutputNameView;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -57,10 +59,10 @@ public class MainPage extends AppCompatActivity implements OnClickListener {
         return mInputNameView;
     }
 
-    private EditText mOutputDNA;
+    private TextView mOutputDNA;
 
-    public EditText getOutputDNA() {
-        mOutputDNA = (EditText) findViewById(R.id.output_dna);
+    public TextView getOutputDNA() {
+        mOutputDNA = (TextView) findViewById(R.id.output_dna);
         return mOutputDNA;
     }
 
@@ -69,8 +71,8 @@ public class MainPage extends AppCompatActivity implements OnClickListener {
         return mInputDNAView;
     }
 
-    public EditText getOutputNameView() {
-        mOutputNameView = (EditText) findViewById(R.id.output_name);
+    public TextView getOutputNameView() {
+        mOutputNameView = (TextView) findViewById(R.id.output_name);
         return mOutputNameView;
     }
 
@@ -234,12 +236,12 @@ public class MainPage extends AppCompatActivity implements OnClickListener {
         dictionary.put("TTT", "STOP");
         String output = "";
 
+        //n'accepte que les strings multiples de 3
         if (input.length() % 3 == 0) {
             for (int i = 0; i<input.length()/3;i=i+1){
                //output = output + dictionary.get(letter.toString().toUpperCase());
-                char[] temp = new char[3];
-                input.getChars(i*3,i*3+2, temp,0);
-                output = output + dictionary.get(temp.toString().toUpperCase());
+                input = input.toUpperCase();
+                output = output + dictionary.get(input.substring(i*3,(i+1)*3));
             }
         }
         else
