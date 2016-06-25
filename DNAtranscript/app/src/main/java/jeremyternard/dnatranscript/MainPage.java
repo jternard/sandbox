@@ -27,6 +27,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.appindexing.Action;
@@ -48,6 +49,13 @@ public class MainPage extends AppCompatActivity implements OnClickListener {
     private EditText mInputNameView;
     private EditText mInputDNAView;
     private TextView mOutputNameView;
+    private ImageView mImageResult;
+
+    public ImageView getImageResult() {
+        mImageResult = (ImageView) findViewById(R.id.image_result);
+        return mImageResult;
+    }
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -84,6 +92,7 @@ public class MainPage extends AppCompatActivity implements OnClickListener {
         mOutputDNA = getOutputDNA();
         mInputDNAView = getInputDNAView();
         mOutputNameView = getOutputNameView();
+        mImageResult = getImageResult();
 
         mInputNameView.setOnClickListener(this);
         mInputDNAView.setOnClickListener(this);
@@ -261,6 +270,13 @@ public class MainPage extends AppCompatActivity implements OnClickListener {
                         break;
                     case R.id.input_dna:
                         mOutputNameView.setText(DNAtoText(vue.getText().toString()));
+                        if (mOutputNameView.getText().equals(mInputNameView.getText().toString())) {
+                            mImageResult.setImageDrawable(getDrawable(R.drawable.happy_48dp));
+                        }
+                        else
+                        {
+                            mImageResult.setImageDrawable(getDrawable(R.drawable.unhappy_48dp));
+                        }
                         break;
                     default:
                         break;

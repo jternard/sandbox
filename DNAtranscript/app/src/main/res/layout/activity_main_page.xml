@@ -23,8 +23,7 @@
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="323dp"
-        android:layout_weight="0.56">
+        android:layout_height="203dp">
 
         <LinearLayout
             android:id="@+id/email_login_form"
@@ -85,7 +84,7 @@
                     android:id="@+id/input_dna"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/default_output"
+                    android:hint="Recopiez le code ci-dessus"
                     android:maxLines="1"
                     android:singleLine="true"
                     android:clickable="true"
@@ -103,5 +102,13 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_result"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.65"
+        android:src="@drawable/neutral_48dp" />
 
 </LinearLayout>
