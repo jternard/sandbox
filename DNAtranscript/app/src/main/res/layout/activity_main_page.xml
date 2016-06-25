@@ -75,25 +75,25 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/input_dna"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/default_output"
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
                 android:maxLines="1"
                 android:singleLine="true"
                 android:clickable="true"
-                android:editable="true" />
+                android:editable="true"
+                android:inputType="textNoSuggestions" />
 
             <EditText
-                android:id="@+id/autoCompleteTextView"
+                android:id="@+id/output_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/default_name"
-                android:inputType="textEmailAddress"
+                android:inputType="textNoSuggestions"
                 android:maxLines="1"
                 android:singleLine="true" />
 
