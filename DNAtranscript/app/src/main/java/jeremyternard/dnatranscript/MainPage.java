@@ -29,14 +29,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
-/**
- * A login screen that offers login via email/password.
- */
+
 public class MainPage extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
     /**
@@ -61,45 +65,36 @@ public class MainPage extends AppCompatActivity implements LoaderCallbacks<Curso
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private EditText mInputNameView;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
+
+    public EditText getInputNameView() {
+        mInputNameView = (EditText) findViewById(R.id.input_name);
+        return mInputNameView;
+    }
+
+    private EditText mOutputDNA;
+
+    public EditText getOutputDNA() {
+        mOutputDNA = (EditText) findViewById(R.id.output_dna);
+        return mOutputDNA;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
-        // Set up the login form.
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
-        populateAutoComplete();
+        mInputNameView = getInputNameView();
+        mOutputDNA = getOutputDNA();
+        mInputNameView.setOnClickListener(mOnClickListener);
 
-        mPasswordView = (EditText) findViewById(R.id.password);
-        mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-                if (id == R.id.login || id == EditorInfo.IME_NULL) {
-                    attemptLogin();
-                    return true;
-                }
-                return false;
-            }
-        });
-
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-        mEmailSignInButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                attemptLogin();
-            }
-        });
-
-        mLoginFormView = findViewById(R.id.login_form);
-        mProgressView = findViewById(R.id.login_progress);
-    }
-
-    private void populateAutoComplete() {
-        if (!mayRequestContacts()) {
-            return;
-        }
-
-        getLoaderManager().initLoader(0, null, this);
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private boolean mayRequestContacts() {
@@ -111,7 +106,7 @@ public class MainPage extends AppCompatActivity implements LoaderCallbacks<Curso
         }
         if (shouldShowRequestPermissionRationale(READ_CONTACTS)) {
             Snackbar.make(mEmailView, R.string.permission_rationale, Snackbar.LENGTH_INDEFINITE)
-                    .setAction(android.R.string.ok, new View.OnClickListener() {
+                    .setAction(android.R.string.ok, new OnClickListener() {
                         @Override
                         @TargetApi(Build.VERSION_CODES.M)
                         public void onClick(View v) {
@@ -124,9 +119,102 @@ public class MainPage extends AppCompatActivity implements LoaderCallbacks<Curso
         return false;
     }
 
-    /**
-     * Callback received when a permissions request has been completed.
-     */
+
+    private void populateAutoComplete() {
+        if (!mayRequestContacts()) {
+            return;
+        }
+
+        getLoaderManager().initLoader(0, null, this);
+    }
+
+
+    ;
+
+    public String textToDNA(String input) {
+        Map<String, String> dictionary = new HashMap<String, String>();
+        dictionary.put("A", "AAA");
+        dictionary.put("B", "AAC");
+        dictionary.put("C", "AAG");
+        dictionary.put("D", "AAT");
+        dictionary.put("E", "ACA");
+        dictionary.put("F", "ACC");
+        dictionary.put("G", "ACG");
+        dictionary.put("H", "ACT");
+        dictionary.put("I", "AGA");
+        dictionary.put("J", "AGC");
+        dictionary.put("K", "AGG");
+        dictionary.put("L", "AGT");
+        dictionary.put("M", "ATA");
+        dictionary.put("N", "ATC");
+        dictionary.put("O", "ATG");
+        dictionary.put("P", "ATT");
+        dictionary.put("Q", "CAA");
+        dictionary.put("R", "CAC");
+        dictionary.put("S", "CAG");
+        dictionary.put("T", "CAT");
+        dictionary.put("U", "CCA");
+        dictionary.put("V", "CCC");
+        dictionary.put("W", "CCG");
+        dictionary.put("X", "CCT");
+        dictionary.put("Y", "CGA");
+        dictionary.put("Z", "CGC");
+        dictionary.put("a", "CGG");
+        dictionary.put("b", "CGT");
+        dictionary.put("c", "CTA");
+        dictionary.put("d", "CTC");
+        dictionary.put("e", "CTG");
+        dictionary.put("f", "CTT");
+        dictionary.put("g", "GAA");
+        dictionary.put("h", "GAC");
+        dictionary.put("i", "GAG");
+        dictionary.put("j", "GAT");
+        dictionary.put("k", "GCA");
+        dictionary.put("l", "GCC");
+        dictionary.put("m", "GCG");
+        dictionary.put("n", "GCT");
+        dictionary.put("o", "GGA");
+        dictionary.put("p", "GGC");
+        dictionary.put("q", "GGG");
+        dictionary.put("r", "GGT");
+        dictionary.put("s", "GTA");
+        dictionary.put("t", "GTC");
+        dictionary.put("u", "GTG");
+        dictionary.put("v", "GTT");
+        dictionary.put("w", "TAA");
+        dictionary.put("x", "TAC");
+        dictionary.put("y", "TAG");
+        dictionary.put("z", "TAT");
+        dictionary.put(" ", "TCA");
+        dictionary.put("STOP", "TCC");
+        dictionary.put("STOP", "TCG");
+        dictionary.put("STOP", "TCT");
+        dictionary.put("STOP", "TGA");
+        dictionary.put("STOP", "TGC");
+        dictionary.put("STOP", "TGG");
+        dictionary.put("STOP", "TGT");
+        dictionary.put("STOP", "TTA");
+        dictionary.put("STOP", "TTC");
+        dictionary.put("STOP", "TTG");
+        dictionary.put("STOP", "TTT");
+
+        String output = "";
+        for (Character letter : input.toCharArray()) {
+            output = output + dictionary.get(letter.toString());
+        }
+        return output;
+    }
+
+
+    public OnClickListener mOnClickListener = new OnClickListener() {
+        public void onClick(View v) {
+            EditText vue = (EditText) v;
+            if (vue.getText().toString().length() >= 1) {
+                mOutputDNA.setText(textToDNA(vue.getText().toString()));
+            }
+        }
+    };
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
@@ -279,6 +367,46 @@ public class MainPage extends AppCompatActivity implements LoaderCallbacks<Curso
         mEmailView.setAdapter(adapter);
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "MainPage Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://jeremyternard.dnatranscript/http/host/path")
+        );
+        AppIndex.AppIndexApi.start(client, viewAction);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "MainPage Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://jeremyternard.dnatranscript/http/host/path")
+        );
+        AppIndex.AppIndexApi.end(client, viewAction);
+        client.disconnect();
+    }
+
 
     private interface ProfileQuery {
         String[] PROJECTION = {
@@ -346,5 +474,5 @@ public class MainPage extends AppCompatActivity implements LoaderCallbacks<Curso
             showProgress(false);
         }
     }
-}
 
+}
