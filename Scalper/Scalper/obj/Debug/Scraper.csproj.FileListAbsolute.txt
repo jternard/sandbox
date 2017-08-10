@@ -1,0 +1,9 @@
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\bin\Debug\Scalper.exe.config
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\bin\Debug\Scalper.exe
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\bin\Debug\Scalper.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\obj\Debug\Scraper.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\obj\Debug\Scalper.exe
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\Scalper\Scalper\obj\Debug\Scalper.pdb
