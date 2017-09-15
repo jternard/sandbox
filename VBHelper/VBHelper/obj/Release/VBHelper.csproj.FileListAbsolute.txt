@@ -1,0 +1,8 @@
+c:\users\jeremy\documents\visual studio 2015\Projects\VBHelper\VBHelper\bin\Release\VBHelper.pdb
+c:\users\jeremy\documents\visual studio 2015\Projects\VBHelper\VBHelper\bin\Release\HtmlAgilityPack.dll
+c:\users\jeremy\documents\visual studio 2015\Projects\VBHelper\VBHelper\bin\Release\HtmlAgilityPack.pdb
+c:\users\jeremy\documents\visual studio 2015\Projects\VBHelper\VBHelper\bin\Release\HtmlAgilityPack.xml
+c:\users\jeremy\documents\visual studio 2015\Projects\VBHelper\VBHelper\obj\Release\VBHelper.pdb
+C:\Users\Jeremy\documents\visual studio 2015\Projects\VBHelper\VBHelper\obj\Release\VBHelper.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\VBHelper\VBHelper\obj\Release\VBHelper.exe
+C:\Users\Jeremy\documents\visual studio 2015\Projects\VBHelper\VBHelper\bin\Release\VBHelper.exe

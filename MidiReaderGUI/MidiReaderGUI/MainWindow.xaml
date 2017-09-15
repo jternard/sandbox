@@ -1,0 +1,19 @@
+﻿<Window x:Class="MidiReaderGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidiReaderGUI"
+        mc:Ignorable="d"
+        Title="MidiReaderGUI" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="hwnd" HorizontalAlignment="Left" Height="23" Margin="202,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" IsEnabled="False" Initialized="hwnd_Initialized"/>
+        <ComboBox x:Name="MIDI_Devices" HorizontalAlignment="Left" Margin="38,54,0,0" VerticalAlignment="Top" SelectedIndex="0" DropDownOpened="MIDI_Devices_DropDownOpened" Initialized="MIDI_Devices_Initialized"/>
+        <Label x:Name="Label" Content="Choix de l'interface MIDI" HorizontalAlignment="Left" Margin="38,28,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_activateMIDI" Content="Activer l'interface MIDI" HorizontalAlignment="Left" Margin="202,80,0,0" VerticalAlignment="Top" Width="159" Click="btn_activateMIDI_Click"/>
+        <ComboBox x:Name="Window_List" HorizontalAlignment="Left" Margin="38,176,0,0" VerticalAlignment="Top" SelectionChanged="Window_List_SelectionChanged" DropDownOpened="Window_List_DropDownOpened" Initialized="Window_List_Initialized"/>
+        <Label x:Name="Label_Copy" Content="Choix de la fenetre d'accroche" HorizontalAlignment="Left" Margin="38,150,0,0" VerticalAlignment="Top"/>        
+        <TextBox x:Name="lastMidiAction" HorizontalAlignment="Left" Height="23" Margin="0,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="507" IsEnabled="False"/>
+
+    </Grid>
+</Window>

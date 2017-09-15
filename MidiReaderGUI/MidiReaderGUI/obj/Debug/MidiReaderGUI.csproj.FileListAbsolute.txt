@@ -1,0 +1,17 @@
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\bin\Debug\MidiReaderGUI.exe.config
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MainWindow.g.cs
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\App.g.cs
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MidiReaderGUI_MarkupCompile.cache
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MidiReaderGUI_MarkupCompile.lref
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\bin\Debug\MidiReaderGUI.exe
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\bin\Debug\MidiReaderGUI.pdb
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\bin\Debug\NAudio.dll
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\bin\Debug\NAudio.xml
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MainWindow.baml
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MidiReaderGUI.g.resources
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MidiReaderGUI.Properties.Resources.resources
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MidiReaderGUI.csproj.GenerateResource.Cache
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MidiReaderGUI.exe
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\obj\Debug\MidiReaderGUI.pdb
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\bin\Debug\WindowsInput.dll
+c:\users\jeremy\documents\visual studio 2015\Projects\MidiReaderGUI\MidiReaderGUI\bin\Debug\WindowsInput.xml

@@ -1,0 +1,8 @@
+c:\users\jeremy\documents\visual studio 2015\Projects\DataRetriever\DataRetriever\bin\Release\DataRetriever.exe.config
+c:\users\jeremy\documents\visual studio 2015\Projects\DataRetriever\DataRetriever\bin\Release\DataRetriever.exe
+c:\users\jeremy\documents\visual studio 2015\Projects\DataRetriever\DataRetriever\bin\Release\DataRetriever.pdb
+c:\users\jeremy\documents\visual studio 2015\Projects\DataRetriever\DataRetriever\obj\Release\DataRetriever.exe
+c:\users\jeremy\documents\visual studio 2015\Projects\DataRetriever\DataRetriever\obj\Release\DataRetriever.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\DataRetriever\DataRetriever\obj\Release\DataRetriever.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\DataRetriever\DataRetriever\bin\Release\Properties\AssemblyInfo.cs
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\DataRetriever\DataRetriever\bin\Release\HtmlAgilityPack.dll

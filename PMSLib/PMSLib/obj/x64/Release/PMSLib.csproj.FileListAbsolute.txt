@@ -1,0 +1,9 @@
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\x64\Release\PMSLib.dll
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\x64\Release\PMSLib.pdb
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\x64\Release\MathNet.Numerics.dll
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\x64\Release\MathNet.Numerics.xml
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\obj\x64\Release\PMSLib.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\obj\x64\Release\PMSLib.dll
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\obj\x64\Release\PMSLib.pdb
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\x64\Release\PMSLib.dll.CodeAnalysisLog.xml
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\x64\Release\PMSLib.dll.lastcodeanalysissucceeded

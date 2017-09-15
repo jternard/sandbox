@@ -1,0 +1,8 @@
+c:\users\jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\Debug\PMSLib.dll
+c:\users\jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\Debug\PMSLib.pdb
+c:\users\jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\obj\Debug\PMSLib.dll
+c:\users\jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\obj\Debug\PMSLib.pdb
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\Debug\PMSLib.tlb
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\Debug\MathNet.Numerics.dll
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\bin\Debug\MathNet.Numerics.xml
+C:\Users\Jeremy\documents\visual studio 2015\Projects\PMSLib\PMSLib\obj\Debug\PMSLib.csprojResolveAssemblyReference.cache
